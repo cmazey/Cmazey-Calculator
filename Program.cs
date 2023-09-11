@@ -53,6 +53,7 @@ else if (input == "/help")
   Console.WriteLine("- Multiplication");
   Console.WriteLine("- Division");
   Console.WriteLine("- LineSlope");
+  Console.WriteLine("- HToI");
   Console.WriteLine("- Change\n");
 }
   
@@ -153,6 +154,26 @@ Console.WriteLine ("CMAZEY CALCULATOR: Line Slope Calculator\n");
 Console.WriteLine($"The slope of the through points ({x1}, {y1}) and ({x2}, {y2}) is {slope}!");
 Console.ReadLine();
 }
+
+//HeightToInches
+else if (input == "HToI")
+{
+Console.Clear();
+Console.WriteLine("CMAZEY CALCULATOR: HEIGHT TO INCHES\n");
+Console.Write("Enter your height in inches: ");
+int height = Convert.ToInt32(Console.ReadLine());
+int num = 12;
+
+int foot = height / num; //Dividing the height in inches by 12
+int inches = height % num;
+      
+Console.Clear();
+Console.WriteLine("CMAZEY CALCULATOR: HEIGHT TO INCHES\n");
+      
+Console.WriteLine($"You are {foot}ft, {inches}in.");
+Console.ReadLine();
+}
+      
 //INVALID RESPONSE
 else 
 {
