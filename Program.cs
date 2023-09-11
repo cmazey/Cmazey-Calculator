@@ -1,5 +1,5 @@
 Console.WriteLine ("--- CMAZEY CALCULATOR ---");
-Console.WriteLine("ALPHA v1.07");
+Console.WriteLine("ALPHA v1.09");
 
 Console.WriteLine("\nType /help to show all the available commands!");
 
@@ -52,6 +52,7 @@ else if (input == "/help")
   Console.WriteLine("- Subtraction");
   Console.WriteLine("- Multiplication");
   Console.WriteLine("- Division");
+  Console.WriteLine("- LineSlope");
   Console.WriteLine("- Change\n");
 }
   
@@ -128,7 +129,30 @@ else if (input == "Clear")
 Console.Clear();
 Console.WriteLine("\nType /help to show all the available commands!\n");
 }
+
+//LINE SLOPE CALCULATOR
+else if (input == "LineSlope")
+{
+Console.Clear();
+Console.WriteLine ("CMAZEY CALCULATOR: Line Slope Calculator\n");
+
+Console.Write("x1: ");
+double x1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("y1: ");
+double y1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("x2: ");
+double x2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("y2: ");
+double y2 = Convert.ToDouble(Console.ReadLine());
+
+double slope = (y2 - y1) / (x2 - x1);
       
+Console.Clear();
+Console.WriteLine ("CMAZEY CALCULATOR: Line Slope Calculator\n");
+      
+Console.WriteLine($"The slope of the through points ({x1}, {y1}) and ({x2}, {y2}) is {slope}!");
+Console.ReadLine();
+}
 //INVALID RESPONSE
 else 
 {
