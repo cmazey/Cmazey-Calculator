@@ -1,5 +1,5 @@
 Console.WriteLine ("--- CMAZEY CALCULATOR ---");
-Console.WriteLine("ALPHA v1.05");
+Console.WriteLine("ALPHA v1.06");
 
 Console.WriteLine("\nType /help to show all the available commands!");
 
