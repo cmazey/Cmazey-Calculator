@@ -52,8 +52,7 @@ else if (input == "/help")
   Console.WriteLine("- Subtraction");
   Console.WriteLine("- Multiplication");
   Console.WriteLine("- Division");
-  Console.WriteLine("- Change");
-  Console.WriteLine("\nSystem Terminated (Looping function coming soon...)");
+  Console.WriteLine("- Change\n");
 }
   
 // MULTIPLICATION
