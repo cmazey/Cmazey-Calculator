@@ -8,7 +8,8 @@ Math but inside a command line!
 - Multiplication
 - Division
 - LineSlope
-- HtoI
+- HToI
 - Change
 
-  More will be coming soon...
+More will be coming soon...
+
