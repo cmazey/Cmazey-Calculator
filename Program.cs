@@ -1,5 +1,5 @@
 Console.WriteLine ("--- CMAZEY CALCULATOR ---");
-Console.WriteLine("ALPHA v1.09");
+Console.WriteLine("ALPHA v2.0");
 
 Console.WriteLine("\nType /help to show all the available commands!");
 
@@ -11,7 +11,7 @@ Console.Write("-> ");
 string input = Console.ReadLine();
 
 // ADDITION
-if (input == "Addition")
+if (input == "Addition" || input == "+")
 {
   Console.Clear();
   Console.WriteLine("CMAZEY CALCULATOR: ADDITION [+]");
@@ -27,7 +27,7 @@ if (input == "Addition")
 }
   
 // SUBTRACTION
-  else if (input == "Subtraction") 
+  else if (input == "Subtraction" || input == "-") 
 {
   Console.Clear();
   Console.WriteLine("CMAZEY CALCULATOR: SUBTRACTION [-]");
@@ -46,7 +46,7 @@ if (input == "Addition")
 }
   
 // HELP COMMAND
-else if (input == "/help")
+  else if (input == "/help" || input == "help")
 {
   Console.WriteLine("\n- Addition");
   Console.WriteLine("- Subtraction");
@@ -54,11 +54,13 @@ else if (input == "/help")
   Console.WriteLine("- Division");
   Console.WriteLine("- LineSlope");
   Console.WriteLine("- HToI");
+  Console.WriteLine("- 8Ball");
+  Console.WriteLine("- Lottery");
   Console.WriteLine("- Change\n");
 }
   
 // MULTIPLICATION
-else if (input == "Multiplication")
+  else if (input == "Multiplication" || input == "x")
 {
   Console.Clear();
   Console.WriteLine("CMAZEY CALCULATOR: MULTIPLICATION [x]");
@@ -78,7 +80,7 @@ else if (input == "Multiplication")
 }
   
 // DIVISION / DIVIDE
-else if (input == "Division")
+  else if (input == "Division" || input == "/")
 {
   Console.Clear();
   Console.WriteLine("CMAZEY CALCULATOR: DIVISION [/]");
@@ -173,11 +175,109 @@ Console.WriteLine("CMAZEY CALCULATOR: HEIGHT TO INCHES\n");
 Console.WriteLine($"You are {foot}ft, {inches}in.");
 Console.ReadLine();
 }
-      
-//INVALID RESPONSE
+
+// 8 BALL
+else if (input == "8Ball")
+{
+  Console.Clear();
+  Console.WriteLine ("--- Magic 8 Ball ---\n");
+
+  Console.WriteLine("What is your question?");
+  Console.Write("-> ");
+  string EightBallInput = Console.ReadLine();
+
+  Random random = new();
+    
+  int eightBall = Convert.ToInt32(random.Next(1,7));
+
+  if (eightBall == 1)
+  {
+    Console.Write("\nMagic 8-Ball: ");
+    Console.WriteLine("It is certain!");
+    Console.ReadLine();
+  }
+  else if (eightBall == 2)
+  {
+    Console.Write("\nMagic 8-Ball: ");
+    Console.WriteLine("Without a doubt!");
+    Console.ReadLine();
+  }
+  else if (eightBall == 3)
+  {
+    Console.Write("\nMagic 8-Ball: ");
+    Console.WriteLine("Ask again later.");
+    Console.ReadLine();
+  }
+  else if (eightBall == 4)
+  {
+    Console.Write("\nMagic 8-Ball: ");
+    Console.WriteLine("Cannot predict now.");
+    Console.ReadLine();
+  }
+  else if (eightBall == 5)
+  {
+    Console.Write("\nMagic 8-Ball: ");
+    Console.WriteLine("Don't count on it.");
+    Console.ReadLine();
+  }
+  else if (eightBall == 6)
+  {
+    Console.Write("\nMagic 8-Ball: ");
+    Console.WriteLine("Outlook not so good.");
+    Console.ReadLine();
+  }
+}
+
+// LOTTERY
+else if (input == "Lottery")
+{
+Console.Clear(); 
+Random random = new();
+int winningNumber = random.Next(0, 100);
+
+int winningDigitOne = winningNumber / 10;
+int winningDigitTwo = winningNumber % 10;
+
+Console.Write("Enter your lottery number (0 - 99): ");
+string inputLot = Console.ReadLine();
+int entryNumber = Convert.ToInt32(inputLot);
+int entryDigitOne = entryNumber / 10;
+int entryDigitTwo = entryNumber % 10;
+
+Console.WriteLine($"\nAnd the winning number is.... {winningNumber}");
+
+if (entryNumber == winningNumber)
+{
+  Console.WriteLine("Exact match! You win the grand prize of $100,000!");
+}
+else if (winningDigitOne == entryDigitTwo && winningDigitTwo == entryDigitOne)
+{
+  Console.WriteLine("You digits match, but out of order! You win $3,000!");
+}
+else
+{
+  Console.WriteLine("No match. Better luck next time!");
+}
+    
+Console.ReadLine();
+}
+  
+// INVALID RESPONSE
 else 
 {
-  Console.WriteLine("Invalid Command, please try again.");
-  Console.WriteLine("P.S. The first letter of the command is always capital");
+  Console.WriteLine("Invalid Command, please try again.\n");
+
+  Random random = new();
+
+  int elseChoice = random.Next(1, 4);
+
+  if (elseChoice == 1)
+  {
+    Console.WriteLine("Fun Fact: A command start with a capital letter!\n");
+  }
+  else if (elseChoice == 2)
+  {
+    Console.WriteLine("Fun Fact: You can use symbols too instead of typing commands. E.G. +, -, x, /\n");
+  }
 }
 }

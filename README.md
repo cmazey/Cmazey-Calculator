@@ -10,4 +10,6 @@ Math but inside a command line!
 - LineSlope
 - HtoI
 - Change
+- Lottery
+
   More will be coming soon...
