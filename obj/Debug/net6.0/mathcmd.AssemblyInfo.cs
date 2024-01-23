@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mathcmd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d7dce2fa4bb41df69e9c5f4745784430f179bc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("mathcmd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mathcmd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
