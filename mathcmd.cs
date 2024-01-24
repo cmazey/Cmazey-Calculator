@@ -2264,7 +2264,7 @@ while (cmazeyCalculator)
             {
                 Console.WriteLine("\nNAME AUTOCORRECTED: Colton Mazey");
                 Console.WriteLine("\\owner");
-                name = "[gold]Colton Mazey[/]";
+                name = "[darkgoldenrod]Colton Mazey[/]";
                 name1 = "Colton M";
                 fname = "Colton";
             }
@@ -2272,7 +2272,7 @@ while (cmazeyCalculator)
             {
                 Console.WriteLine("\nNAME AUTOCORRECTED: Anderson Scott");
                 Console.WriteLine("\\friend");
-                name = "[gold]Anderson Scott[/]";
+                name = "[darkgoldenrod]Anderson Scott[/]";
                 name1 = "Anderson S";
                 fname = "Andy";
             }
@@ -2288,7 +2288,7 @@ while (cmazeyCalculator)
             {
                 Console.WriteLine("\nNAME AUTOCORRECTED: Brandon Reed");
                 Console.WriteLine("\\friend");
-                name = "[gold]Brandon Reed[/]";
+                name = "[darkgoldenrod]Brandon Reed[/]";
                 name1 = "Brandon R";
                 fname = "Brandon";
                 crew = true;
@@ -2297,7 +2297,7 @@ while (cmazeyCalculator)
             {
                 Console.WriteLine("\nNAME AUTOCORRECTED: Braeden Barker");
                 Console.WriteLine("\\friend");
-                name = "[gold]Braeden Barker[/]";
+                name = "[darkgoldenrod]Braeden Barker[/]";
                 name1 = "Braeden B";
                 fname = "Braeden";
                 crew = true;
@@ -2306,7 +2306,7 @@ while (cmazeyCalculator)
             {
                 Console.WriteLine("\nNAME AUTOCORRECTED: Owen Konjura");
                 Console.WriteLine("\\friend");
-                name = "[gold]Owen Konjura[/]";
+                name = "[darkgoldenrod]Owen Konjura[/]";
                 name1 = "Owen K";
                 fname = "Owen";
             }
@@ -2323,7 +2323,7 @@ while (cmazeyCalculator)
             {
                 Console.WriteLine("\nNAME AUTOCORRECTED: David Burke");
                 Console.WriteLine("\\friend");
-                name = "[gold]David Burke[/]";
+                name = "[darkgoldenrod]David Burke[/]";
                 name1 = "David B";
                 fname = "David";
             }
@@ -2331,7 +2331,7 @@ while (cmazeyCalculator)
             {
                 Console.WriteLine("\nNAME AUTOCORRECTED: Sean D");
                 Console.WriteLine("\\friend");
-                name = "[gold]Sean D[/]";
+                name = "[darkgoldenrod]Sean D[/]";
                 name1 = "Sean D";
                 fname = "Sean";
                 crew = true;
