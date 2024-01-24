@@ -5,7 +5,7 @@ bool crew = false;
 string name = "[gray]Guest[/]";
 string fname = "";
 string name1 = "Guest";
-string version = "ALPHA v6.13.0";
+string version = "v1.0.0";
 
 Thread.Sleep(3000);
 Console.Clear();
